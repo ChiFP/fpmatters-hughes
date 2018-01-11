@@ -1,0 +1,10 @@
+# Why Functional Programming Matters
+
+# The original paper from 1990
+https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf
+
+# A keynote presentation at Lambda Days 2017 by Hughes and his wife, Marey Sheeran (other versions from YOW, Erlang Days, etc.)
+https://www.youtube.com/watch?v=1qBHf8DrWR8
+
+# An interview on the subject with Hughes
+https://www.infoq.com/interviews/john-hughes-fp

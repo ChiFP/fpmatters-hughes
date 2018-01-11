@@ -1,0 +1,9 @@
+C   N IS CALLED ZN HERE SO THAT IT HAS THE RIGHT TYPE
+           X = A0
+           Y = A0 + 2. * EPS
+C   Y’S VALUE DOES NOT MATTER SO LONG AS ABS(X-Y).GT.EPS
+     100   IF ABS(X-Y).LE.EPS GOTO 200
+           Y=X
+           X = (X + ZN/X) / 2. GOTO 100
+     200   CONTINUE
+C   THE SQUARE ROOT OF ZN IS NOW IN X.
