@@ -72,7 +72,7 @@ withintol eps (a0 : a1 : as)
 
 myabssqrt eps a0 n = withintol eps (repeatit (nextr n) a0)
 
-sq2abs = myabssqrt (1/10000000) 1 2
+sq2abs = myabssqrt (1.0e-6) 1 2
 
 -- for small values of roots, relative errors suffer less rounding
 withinreltol ::
@@ -86,5 +86,5 @@ withinreltol eps (a0 : a1 : as)
 
 myrelsqrt eps a0 n = withinreltol eps (repeatit (nextr n) a0)
 
-sq2rel = myrelsqrt (1/10000000) 1 2
+sq2rel = myrelsqrt (1.0e-6) 1 2
 
