@@ -3,6 +3,8 @@ module ProgGlue1 where
 -- Explore uses of lazy evaluation to enable the
 -- separation of loop termination from loop iteration
 
+-- Sec. 4.1
+
 {--
 
 Use Newton's method for finding roots to compute 

@@ -1,5 +1,7 @@
 module Glue2 where
 
+-- Sec. 3 to p. 6
+
 -- One can look at (foldr f b) when applied to lists as:
 
 -- substitute b for every []

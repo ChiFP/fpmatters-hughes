@@ -2,6 +2,8 @@ module Glue4 where
 
 {--
 Apply the modularity methods to a custom data type
+
+Sec. 3 to p. 8
 --}
 
 data ATree a = ANode a [ATree a] deriving Show

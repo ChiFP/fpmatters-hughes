@@ -1,5 +1,7 @@
 module Glue3 where
 
+-- Sec. 3 to p. 7
+
 -- What about applying a simple function to each element of a list
 -- creating a new list of the transformed values?
 

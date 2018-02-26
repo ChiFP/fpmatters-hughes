@@ -4,9 +4,10 @@ import ProgGlue1 (repeatit, withintol)
 
 {--
 
-Compute derivatives of a function numerically
+Compute derivatives of a function numerically,
 taking advantage of lazy evaluation
 
+Sect. 4.2
 --}
 
 -- definition of derivative of f without the limit h -> 0

@@ -7,6 +7,8 @@ module Glue1 where
 -- Both use a recursive definition that iterates over the
 -- collection (list in this case) term by term
 
+-- Sec. 3 to p. 5
+
 mysum :: 
   Num a =>
   [a] -> 
