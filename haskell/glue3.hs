@@ -16,8 +16,9 @@ doubleandcons n ns = (2*n) : ns
 -- A function to double each element in a numerical list making a new list
 doubleall ns = foldr doubleandcons [] ns
 
--- As usual, let's pull out the specific doubling function 
--- as a parameter and provide a general function to be provided:
+-- Pull out the specific doubling function 
+-- as a parameter and define a slot for a
+-- general function to be provided:
 fandcons :: 
   Num n => 
   (n -> n) -> 
@@ -29,7 +30,7 @@ fandcons f n ns = f n : ns
 -- Apply f to each element
 fall1 f ns = foldr (fandcons f) [] ns 
 
-sqfour1 = fall1 (\m->m*m) [1..4]
+sqfour1 = fall1 (\m -> m * m) [1..4]
 
 {-
 Using functional composition

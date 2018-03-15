@@ -36,13 +36,17 @@ Solving for h:
 
   h = 1/2 (N/r - r)
 
-Adding r_(k) to both sides gives the recurrence: 
+Adding r_(k) to h to give the next aproximation r_(k+1): 
 
   r_(k+1) = r_(k) + h = 1/2 (N / r_(k) + r_(k))
 
 This converges to the square root of N to a prescribed accuracy, with
 a non-0 starting value.
+
 --}
+
+-- generate a better approximation for the square root of n from the
+-- current estimate r - this is the recursion for r_(k+1) above
 
 nextr :: 
   (Floating a) => 
@@ -59,7 +63,8 @@ repeatit ::
   [a]
 repeatit f r = r : (repeatit f (f r))
 
-firstrn n = take n (repeatit (nextr 2) 1)
+-- first m approximations to square root of 2 starting with estimate 1
+firstrn m = take m (repeatit (nextr 2) 1)
 
 -- accept the result when the absolute difference between
 -- successive terms is less than eps
