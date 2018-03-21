@@ -20,7 +20,7 @@ easydiff ::
 easydiff f x h = ((f (x + h)) - (f x))/h
 
 differentiate h0 f x = map (easydiff f x) (repeatit halve h0) 
-  where halve x = x/2
+  where halve h = h/2
 
 
 -- Add the controlling consumer re-using the 
